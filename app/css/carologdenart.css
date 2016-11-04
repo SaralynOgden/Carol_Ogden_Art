@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -100px 0;
+    padding: 0;
+}
+
+#header {
+  margin: 35px auto 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+#info_panel {
+  max-height: 100%;
+  width: 100%;
+  padding: 0.5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6vw;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 13px 0;
+  font-family: Century Gothic, sans-serif;
+  font-weight: normal;
+}
+
+#button_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background: none;
+  border: none;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+
+button:hover {
+  color: black;
+}
+
+.wrapper:after {
+  display: block;
+  height: 60px;
+  padding: 0;
+}
+
+.footer {
+  height: 60px;
+  padding: 0;
+}
+
+#etsy_logo, #pinterest_logo {
+  align-items: center;
+  width: 2.5%;
+  height: auto;
+  float: right;
+  opacity: 0.6;
+  margin: 15px 5px 0 0;
+}
+
+#pinterest_logo {
+  margin: 15px 18px 0 0;
+}
+
+#etsy_logo:hover, #pinterest_logo:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  #corner_picture {
+    display: none;
+  }
+
+  #info_panel {
+    width: 100%;
+  }
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* Home */
+
+.autoplay {
+  width: 75%;
+  margin: 50px auto 0 auto;
+}
+
+.slideshow_picture {
+  margin: 0 10px;
+  width: 100%;
+  height: auto;
+}
+
+.slideshow_picture:hover {
+  opacity: 0.9;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(248,248,248,0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 40%;
+		height: auto;
+    max-width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+  .autoplay {
+    width: 100%;
+    margin: 40px auto;
+  }
+}
+
+/* thumbnail-modal page*/
+
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  width: 23%;
+  padding-bottom: 23%;
+  overflow: hidden;
+  margin: 1%;
+  font-size: 0;
+}
+
+.thumbnail img {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail_container {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  font-size: 0;
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail img:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  .thumbnail {
+    width: 30.6%;
+		padding-bottom: 30.6%;
+		margin: 1.36%;
+  }
+
+	.modal-content {
+		width:50%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+  .thumbnail {
+    width: 48%;
+		padding-bottom: 48%;
+		margin: 1%;
+  }
+
+	.modal-content {
+		width:60%;
+	}
+}
+
+@media screen and (max-width: 300px) {
+  .thumbnail {
+    width: 100%;
+		padding-bottom: 100%;
+		margin: 1%;
+  }
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/*   About  */
+
+#profile-photo {
+  display: block;
+  margin: 60px auto;
+}
+
+#info_paragraph {
+  text-align: center;
+}
